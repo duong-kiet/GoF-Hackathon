@@ -27,8 +27,8 @@ An extension application integrated into the browser, capable of detecting Deepf
 
 ## Demo
 
-[![Demo GoF extension](./images/thumbnail-demo.png)](./demo/demo-extension.mp4)
-<!-- [![Demo GoF extension](./images/thumbnail-demo.png)](https://youtu.be/Kg-UCkpaw-E) -->
+<!-- [![Demo GoF extension](./images/thumbnail-demo.png)](./demo/demo-extension.mp4) -->
+[![Demo GoF extension](./images/thumbnail-demo.png)](https://youtu.be/Kg-UCkpaw-E)
 
 Click the image above to watch the demo video on YouTube.
 
