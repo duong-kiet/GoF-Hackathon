@@ -108,7 +108,7 @@ GoF-Hackathon/
 | Dataset      | Deepfake Detection Accuracy | Deepvoice Detection Accuracy |
 |:------------:|:---------------------------:|:----------------------------:|
 | FMFCC-V      | 0.78                      | -                            |
-| ASVspoof2021 | -                           | 0.85                       |
+| ASVspoof2021 | -                           | 0.892                       |
 
 ## Future Development
 
