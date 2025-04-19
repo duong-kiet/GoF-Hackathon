@@ -1,1 +1,2 @@
-https://drive.google.com/file/d/1kl9QD3Z5aNMpJcCQf50UOcEj3z3QXhpW/view
+model.keras : https://drive.google.com/file/d/1kl9QD3Z5aNMpJcCQf50UOcEj3z3QXhpW/view
+DeepFace_XceptionNet_model.063.keras : https://drive.google.com/file/d/1Yvc_aT2lb6xmxGM8cxRG1Yu7ARNHjwqH/view

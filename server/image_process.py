@@ -3,10 +3,8 @@ import cv2
 import os
 import tensorflow as tf
 
-# UPLOAD_DIR_IMAGE = r'C:\Users\Admin\Documents\Code\daily chill\GDSC-Hackathon-new\image'
-
 current_dir = os.path.dirname(__file__) 
-model_path = os.path.abspath(os.path.join(current_dir, '..', 'model.keras'))
+model_path = os.path.abspath(os.path.join(current_dir, '..', 'Resnet.keras'))
 UPLOAD_DIR_IMAGE = os.path.abspath(os.path.join(current_dir, '..', 'image'))
 
 def ELA(image_path, quality=90):
@@ -34,14 +32,14 @@ def load(image_dir, img_size = (299, 299)):
 Xception = tf.keras.models.load_model(model_path)
 
 def process_image_with_model(file_paths):
-    images = load(file_paths)
+    images = load(file_paths, img_size = (128, 128))
     normal_images = np.array(images).astype('float32') / 255
 
     y_pred = Xception.predict(normal_images, batch_size=4)
     y_pred_class = np.argmax(y_pred, axis=1)
     
     real = np.count_nonzero(y_pred_class==1)
-    print(real/len(y_pred_class))
+    print(real, len(y_pred_class))
     if real > len(y_pred_class) / 2:
         return {
             "Dự đoán": "Real",

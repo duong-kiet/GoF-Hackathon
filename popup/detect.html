@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoF Extension</title>
+    <script defer src="../face-api.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div style="padding: 28px 26px; background: #647ACB; padding-bottom: 36px;">
+      <div class="container">
+        <div style="border-bottom: 1px solid #efefef;">
+          <h1 class="title">Deepfake + Deepvoice</h1>
+        </div>
+
+        <div class="container-video" style="margin: 20px auto 10px;">
+          <video id="video" class="not-loaded" style="width: 100%;"></video>
+        </div>
+
+        <p class="state-loading" style="color: black; text-align: center; font-size: 16px; font-weight: 600;">Đang thu thập video ...</p>
+
+        <div id="result-detection" class="hidden" style="margin-top: 10px; display: flex; justify-content: space-around;">
+          <div id="face-detection" style="width: 40%;"></div>
+          <div id="voice-detection" style="width: 40%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="detect.js"></script>
+  </body>
+</html>
